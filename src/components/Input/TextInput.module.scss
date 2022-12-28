@@ -1,16 +1,14 @@
 @import '../../styles/variables.scss';
 
 .input {
-  border: 1px solid $primary;
+  border: none;
   border-radius: 3px;
-  background-color: $bg;
+  background-color: $primaryDark;
   outline: none;
-  color: $primary;
+  color: $secondaryLight;
 
   &::placeholder {
     font-size: 14px;
     font-weight: 200;
   }
 }
-
-

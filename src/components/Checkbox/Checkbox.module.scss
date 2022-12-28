@@ -38,7 +38,7 @@
   height: 10px;
   margin: auto;
   transition: opacity 0.15s ease;
-  fill: $primary;
+  fill: $secondaryLight;
 }
 
 .iconChecked {
@@ -52,7 +52,7 @@
   color: $primary;
   width: 15px;
   height: 15px;
-  border: 1px solid $primary;
+  border: 1px solid $primaryLight;
   border-radius: 3px;
   background-color: transparent;
   z-index: 1;

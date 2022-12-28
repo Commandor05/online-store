@@ -1,33 +1,33 @@
 @import '../../styles/variables.scss';
 
 .button {
-  font-weight: 400;
+  font-size: 15px;
   border-radius: 3px;
-  padding: 5px 30px;
-  border: 1px solid $primary;
+  padding: 2px 20px;
+  border: 1px solid $primaryLight;
   cursor: pointer;
+  color: $secondaryLight;
+  transition: background-color 0.3s ease;
 }
 
 .button_primary {
-  background-color: $primary;
+  background-color: $primaryDark;
   color: #fff;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: darken($primary, 10%);
+    background-color: lighten($primaryDark, 5%);
   }
 }
 
 .button_secondary {
-  background-color: $bg;
-  color: $primary;
+  background-color: $primary;
+  color: $secondaryLight;
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
-    background-color: $primary;
+    background-color: $primaryDark;
     color: #fff;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
-
-
