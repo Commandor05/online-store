@@ -6,10 +6,9 @@ import CheckoutPage from './components/Pages/CheckoutPage';
 import ProductPage from './components/Pages/ProductPage';
 import { Sandbox } from './components/Sandbox/Sandbox';
 import DataService from './utils/DataService';
-import productsData from './data';
+import productsData from './utils/config/data';
 
 const App = () => {
-
   const dataService: DataService = DataService.getInstance();
   const [isDataLoaded, setIsDataLoaded] = useState<boolean>(false);
   const fetchData = () => {
@@ -28,7 +27,6 @@ const App = () => {
 
   useEffect(() => {
     fetchData();
-    console.log('init app');
   }, []);
 
   return (
