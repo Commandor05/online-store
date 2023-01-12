@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  width: 20%;
+}
+
+.label {
+  outline: none;
+  user-select: none;
+  margin-left: 5px;
+  color: $secondaryLight;
+}
+
+.form {
+  margin-top: 5px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.iconWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin: auto;
+  transition: opacity 0.15s ease;
+  fill: $secondaryLight;
+}
+
+.iconChecked {
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+.checkbox {
+  appearance: none;
+  place-content: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $primaryLight;
+  border-radius: 3px;
+  background-color: transparent;
+  z-index: 1;
+}

@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+@keyframes spinner-frame {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid $light;
+  border-top: 10px solid $primaryDark;
+  border-radius: 50%;
+  animation: spinner-frame 1.5s linear infinite;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

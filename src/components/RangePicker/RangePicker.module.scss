@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  position: absolute;
+  height: 3px;
+  background: $primaryLight;
+}
+
+.range {
+  width: 100%;
+  appearance: none;
+  background-color: $secondaryLight;
+  border-radius: 4px;
+  outline: none;
+  height: 3px;
+  cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    position: relative;
+    background: $light;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    appearance: none;
+  }
+}

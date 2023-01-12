@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.button {
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 2px;
+  border: 1px solid $primaryLight;
+  cursor: pointer;
+  color: $secondaryLight;
+  transition: background-color 0.3s ease;
+}
+
+.button_primary {
+  background-color: $primaryDark;
+
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: lighten($primaryDark, 5%);
+    transition: background-color 0.3s ease;
+  }
+}
+
+.button_secondary {
+  background-color: $primary;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary, 5%);
+
+    transition: background-color 0.3s ease;
+  }
+}

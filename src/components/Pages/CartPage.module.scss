@@ -1,0 +1,290 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mainWrapper {
+  height: calc(100% - 100px);
+  display: flex;
+  justify-content: center;
+}
+
+.confirmModalWrapper {
+  width: 300px;
+  height: 100px;
+  color: $secondaryLight;
+  border-radius: 10px;
+  border: 1px solid $primary;
+  background-color: $primaryLight;
+  display: flex;
+  justify-content: center;
+}
+
+.mainDecoration {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: $primaryDark;
+
+  &::before {
+    padding-bottom: 60%;
+    top: -150px;
+    transform: translate(-50%, -35%);
+    width: 145%;
+    content: '';
+    left: 50%;
+    background-image: radial-gradient(
+      52% 52% at center,
+      rgba(34, 36, 39, 0.73) 0%,
+      rgba(43, 85, 169, 0.6) 45%,
+      transparent 100%
+    );
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.main {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.productsWrapper {
+  border: 1px solid $primaryLight;
+  border-radius: 10px;
+  background-color: $primary;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.productsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $secondaryLight;
+  font-size: 12px;
+  background-color: $primaryDark;
+  padding: 10px;
+}
+
+.products {
+  overflow: auto;
+  height: 65vh;
+
+  &::-webkit-scrollbar {
+    background-color: $primaryDark;
+    border-radius: 6px;
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 6px;
+  }
+}
+
+.productsHeaderTitle {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.productsHeaderInput {
+  width: 60px;
+  margin-left: 10px;
+}
+
+.productsHeaderSumButtons {
+  display: flex;
+  align-items: center;
+}
+
+.productsHeaderSum {
+  margin-left: 10px;
+}
+
+.productsHeaderButton {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.productsHeaderSumNumber {
+  margin-left: 10px;
+}
+
+.emptyCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $secondaryLight;
+  background-color: $primary;
+  height: 300px;
+}
+
+.cardContainer {
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productNumber {
+  color: $secondaryLight;
+}
+
+.sum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $secondaryLight;
+  background-color: $primary;
+  border: 1px solid $primaryLight;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 10px;
+  min-width: 250px;
+}
+
+.sumInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 0 20px;
+}
+
+.sumTitle {
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  text-shadow: 1px 0px 2px $secondaryLight, 0 0 1em $light;
+}
+
+.sumProducts {
+  margin-top: 10px;
+}
+
+.totalSum {
+  margin-top: 10px;
+}
+
+.totalSumWithPromo {
+  margin-top: 10px;
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promoCode {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: $primary;
+  border: 1px solid $primaryLight;
+  border-radius: 5px;
+  padding-left: 5px;
+  width: 150px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.promocodes {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.promoButton {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  margin: 5px;
+}
+
+.sumTextInput {
+  margin-top: 10px;
+}
+
+.submitButton {
+  width: 100px;
+  margin-top: 10px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+@media (max-width: 1300px) {
+}
+
+@media (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .productsWrapper {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .productInfo {
+    margin-left: 10px;
+  }
+
+  .productSum {
+    display: flex;
+    align-items: center;
+  }
+
+  .productButton {
+    margin-left: 5px;
+  }
+
+  .productAmount {
+    margin-left: 5px;
+  }
+
+  .sum {
+    flex-direction: row;
+    order: -1;
+    width: 80%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .sum {
+    width: 95%;
+  }
+
+  .productsHeaderButton {
+    margin-left: 5px;
+  }
+
+  .productsHeaderSumNumber {
+    margin-left: 5px;
+  }
+
+  .productInfo {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+  }
+}

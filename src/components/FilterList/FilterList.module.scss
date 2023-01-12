@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  border: 1px solid $primaryLight;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  color: $secondaryLight;
+}
+
+.title {
+  margin: 0;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.listWrapper {
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    background-color: $primaryDark;
+    border-radius: 6px;
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 6px;
+  }
+}

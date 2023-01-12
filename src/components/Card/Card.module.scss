@@ -1,0 +1,80 @@
+@import '../../styles/variables.scss';
+
+.card {
+  background-color: $primaryDark;
+  border: 1px solid $primaryLight;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardBig {
+  width: 160px;
+}
+
+.cardSmall {
+  width: 106px;
+}
+
+.basket {
+  fill: $secondaryLight;
+  width: 30px;
+  height: 30px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.cardImg {
+  width: auto;
+  height: 100px;
+
+  &Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.cardInfoWrapper {
+  background-color: $primaryDark;
+  width: 100%;
+  margin: 9px 0;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.cardButtons {
+  display: flex;
+  padding: 3px;
+}
+
+.cardButton {
+  width: 50%;
+  margin: 3px;
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $primaryLight;
+  cursor: pointer;
+  background-color: $primaryDark;
+  color: $secondaryLight;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    background-color: lighten($primaryDark, 5%);
+  }
+}

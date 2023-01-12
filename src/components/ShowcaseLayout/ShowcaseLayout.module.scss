@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+.main {
+  max-width: 1024px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.mainWrapper {
+  height: calc(100% - 100px);
+  display: flex;
+  justify-content: center;
+}
+
+.mainDecoration {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: $primaryDark;
+
+  &::before {
+    padding-bottom: 60%;
+    top: -150px;
+    transform: translate(-50%, -35%);
+    width: 145%;
+    content: '';
+    left: 50%;
+    background-image: radial-gradient(
+                    52% 52% at center,
+                    rgba(34, 36, 39, 0.73) 0%,
+                    rgba(43, 85, 169, 0.6) 45%,
+                    transparent 100%
+    );
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.cards {
+  padding-left: 20px;
+  height: 100%;
+}

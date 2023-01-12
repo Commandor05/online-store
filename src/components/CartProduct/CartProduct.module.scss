@@ -1,0 +1,71 @@
+@import '../../styles/variables.scss';
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.productInformation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImg {
+  border-radius: 6px;
+  width: 170px;
+  height: 170px;
+  margin-left: 20px;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  color: $secondaryLight;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+.productTitle {
+  font-weight: 400;
+  color: $light;
+  text-shadow: 1px 0px 2px $light, 0 0 1em $secondaryLight;
+}
+
+.productButton {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.productAmount {
+  margin-left: 10px;
+}
+
+.productSum {
+  display: flex;
+  align-items: center;
+  color: $secondaryLight;
+  margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .product {
+    padding: 10px;
+  }
+
+  .productImg {
+    width: 130px;
+    height: 100px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .product {
+    position: relative;
+    align-items: flex-start;
+    height: 200px;
+  }
+}

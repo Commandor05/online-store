@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  height: calc(100% - 50px);
+  overflow: auto;
+  border: 1px solid $primaryLight;
+  border-radius: 10px;
+  color: $secondaryLight;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    background-color: $primaryDark;
+    border-radius: 6px;
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 6px;
+  }
+}

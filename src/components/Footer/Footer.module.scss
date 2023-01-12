@@ -1,0 +1,64 @@
+@import '../../styles/variables.scss';
+
+.footerWrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #020319;
+}
+
+.footer {
+  max-width: 1024px;
+  height: 50px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: $footerText;
+}
+
+.footerAuthorsInfo {
+  display: flex;
+}
+
+.authors {
+  font-weight: 400;
+}
+
+.footerAuthorsLinks {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.authorLink {
+  text-decoration: none;
+  color: $footerText;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $light;
+    transition: color 0.3s ease;
+  }
+}
+
+.footerLogo {
+  width: 60px;
+  fill: $primary;
+  transition: fill 0.3s ease;
+
+  &:hover {
+    fill: lighten($primary, 15%);
+    transition: fill 0.3s ease;
+  }
+}
+
+.schoolLink {
+  margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+  .footerAuthorsInfo {
+    font-size: 12px;
+  }
+}

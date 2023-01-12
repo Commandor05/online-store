@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.status {
+  padding-right: 7px;
+}
